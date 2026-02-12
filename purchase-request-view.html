@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>View Purchase Request</title>
+  <link rel="stylesheet" href="pr.css">
+</head>
+<body>
+
+<div class="navbar">
+  <div class="logo">Purchase App</div>
+  <nav>
+    <ul>
+      <li><a href="purchase-request.html">Purchase Request</a></li>
+    </ul>
+  </nav>
+</div>
+
+<div class="container">
+  <h2>View Purchase Request</h2>
+
+  <div class="card">
+    <p><b>No PR:</b> <span id="prNo"></span></p>
+    <p><b>Status:</b> <span id="prStatus"></span></p>
+    <p><b>Created Date:</b> <span id="prDate"></span></p>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Product ID</th>
+        <th>Product</th>
+        <th>Supplier</th>
+        <th>Qty</th>
+      </tr>
+    </thead>
+    <tbody id="itemTable"></tbody>
+  </table>
+
+  <div class="po-actions">
+    <button class="save" onclick="approved()">Approved</button>
+    <button class="cancel" onclick="back()">Back</button>
+  </div>
+</div>
+
+<script src="pr-view.js"></script>
+</body>
+</html>

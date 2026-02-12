@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Purchase Order App</title>
+  <link rel="stylesheet" href="pr.css" />
+</head>
+<body>
+
+<h2 class="judul">Create New Purchase Order</h2>
+
+<div class="container">
+  <h3>Create PO</h3>
+  <div class="autocomplete">
+    <input type="text" id="supplier" placeholder="Supplier Name" autocomplete="off">
+    <div class="autocomplete-list" id="supplierList"></div>
+  </div>
+
+  <div class="autocomplete">
+    <input type="text" id="product" placeholder="Product Name" autocomplete="off">
+    <div class="autocomplete-list" id="productDropdown"></div>
+  </div>
+
+  <input type="text" id="productId" placeholder="Product ID" readonly>
+
+  <input type="number" id="qty" placeholder="Quantity"><br>
+  
+
+  <button onclick="addPO()">Add</button>
+</div>
+
+<div class="container">
+  <h3>Purchase Order List</h3>
+  <table border="1" width="100%">
+    <thead>
+      <tr>
+        <th>Id Product</th>
+        <th>Product</th>
+        <th>Supplier</th>
+        <th>Qty</th>
+        <th>date</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="poTable"></tbody>
+  </table>
+
+  <div class="po-actions">
+    <button type="button" class="" onclick="savePR()">Save</button>
+    <button type="button" class="" onclick="cancelPR()">Cancel</button>
+    <button type="button" class="" onclick="printPOList()">Print</button>
+  </div>
+
+</div>
+
+
+
+
+<script src="app.js"></script>
+</body>
+</html>

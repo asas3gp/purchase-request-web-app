@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="pr.css">
+</head>
+<body>
+  <header class="navbar">
+  <div class="logo">Purchase Request</div>
+  <nav>
+    <ul>
+      <li><a href="index.html" class="">Create PO</a></li>
+      <li><a class="" onclick="logout()">Logout</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main-container" class="container">
+<header class="header">
+  <h1>Current PO</h1>
+  <p class="subtitle">Create, read, update and delete Purchase Request records</p>
+
+<table border="1" width="100%">
+  <thead>
+    <tr>
+      <th>No</th>
+      <th>No PR</th>
+      <th>Status</th>
+      <th>Created Date</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody id="prTable"></tbody>
+</table>
+
+</header>
+
+</main>
+
+<script src="pr.js"></script>
+  
+</body>
+</html>
+
+
+

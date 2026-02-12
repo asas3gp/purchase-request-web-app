@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Purchase Request</title>
+  <link rel="stylesheet" href="pr.css">
+</head>
+<body>
+
+<div class="navbar">
+  <div class="logo">Purchase App</div>
+  <nav>
+    <ul>
+      <li><a href="purchase-request.html">Purchase Request</a></li>
+    </ul>
+  </nav>
+</div>
+
+<div class="container">
+  <h2>Edit Purchase Request</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Supplier</th>
+        <th>Qty</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="editTable"></tbody>
+  </table>
+
+  <div class="po-actions">
+    <button class="save" onclick="saveEdit()">Save</button>
+    <button class="cancel" onclick="back()">Cancel</button>
+  </div>
+</div>
+
+<script src="pr-edit.js"></script>
+</body>
+</html>

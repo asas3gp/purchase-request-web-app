@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="card">
+        <h2>Admin Login</h2>
+        <form onsubmit="return login();" autocomplete="on">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="admin" autocomplete="username" />
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="••••••••" autocomplete="current-password" />
+            
+
+            <button type="submit">Login</button>
+        </form>
+        <div id="error" style="display:none; color:#ff4d4d; margin-top: 10px;">
+            Username atau password salah!
+        
+        </div>
+    </div>
+    
+    
+
+    <script>
+        function login() {
+            const user = document.getElementById("username").value;
+            const pass = document.getElementById("password").value;
+
+            // LOGIN DEFAULT
+            const validUser = "salsabila";
+            const validPass = "1234";
+
+            if (user === validUser && pass === validPass) {
+                // LOGIN BERHASIL → MASUK KE INDEX.HTML
+                window.location.href = "purchase-request.html";
+                return false;
+            }
+
+            // Jika gagal, tampilkan pesan error
+            document.getElementById("error").style.display = "block";
+            return false; 
+        }
+    </script>
+
+    
+    
+</body>
+</html>
