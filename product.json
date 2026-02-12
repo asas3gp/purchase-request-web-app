@@ -1,0 +1,15 @@
+[ 
+    { "id": "PRD001", "name": "UHT" }, 
+    { "id": "PRD002", "name": "Fresh Milk" }, 
+    { "id": "PRD003", "name": "House Blend" }, 
+    { "id": "PRD004", "name": "Aren Syrup" },
+    { "id": "PRD005", "name": "Pandan Syrupd" }, 
+    { "id": "PRD006", "name": "Jasmine Syrup" }, 
+    { "id": "PRD007", "name": "Cremer" }, 
+    { "id": "PRD008", "name": "Crumble" }, 
+    { "id": "PRD009", "name": "Napkin" }, 
+    { "id": "PRD010", "name": "Matcha Posder" }, 
+    { "id": "PRD011", "name": "Vanilla Syrup" }, 
+    { "id": "PRD012", "name": "Caramel Sauce" }, 
+    { "id": "PRD013", "name": "Tiramisu Syrup" }
+]
